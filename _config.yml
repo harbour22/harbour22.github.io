@@ -14,26 +14,32 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Harbour22
-email: harbour22@pending
+email: narrator[at][domain]
 description: >- # this means to ignore newlines until "baseurl:"
   Musings and notes in an ever evolving world
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: pending
-github_username:  pending
+twitter_username: harbour22uk
+github_username:  harbour22
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+#  - jekyll-paginate
+
+# paginate: 5
+
+excerpt_separator: <!--more-->
+permalink: /:categories/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
