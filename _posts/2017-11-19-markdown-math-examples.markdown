@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Markdown math examples
-date:   2017-10-11
+date:   2017-11-19
 categories: General
 ---
 
