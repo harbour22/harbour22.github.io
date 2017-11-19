@@ -7,7 +7,7 @@ math: true
 ---
 
 
-Given that I've started reading through a book on [Linear Algebra](https://books.google.co.uk/books/about/Linear_Algebra_Concepts_and_Methods.html) I was interested to see what support there was for rendering mathematical symbols on GitHub Pages.  It seems that the syntax below is supported but the setup needed for this site was a little unclear from the documentation
+I've started reading through a book on [Linear Algebra](https://books.google.co.uk/books/about/Linear_Algebra_Concepts_and_Methods.html) and as such I was interested to see what support there was for rendering mathematical symbols on GitHub Pages.  It seems that the syntax below is supported but the setup needed for this site was a little unclear from the documentation
 
 ```
 $$ a^2 + b^2 = c^2 $$
