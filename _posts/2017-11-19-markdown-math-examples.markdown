@@ -2,7 +2,7 @@
 layout: post
 title:  Markdown mathematical symbol rendering
 date:   2017-11-19
-categories: General, Mathematics
+categories: General Mathematics
 math: true
 ---
 
