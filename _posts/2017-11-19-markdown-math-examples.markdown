@@ -19,6 +19,7 @@ $$ a^2 + b^2 = c^2 $$
 
 (If there is nothing rendered prior to the code block above then the rendering setup hasn’t worked which was true in many iterations of this post!  Should be working now)
 
+<!--more-->
 These were the following changes that enabled the correct rendering on the minima theme
 
 On the posts.html in the _layout directory (this this didn’t exist prior then copy from the minima theme) we’ve added the following prior to the ```<article>``` tag.
