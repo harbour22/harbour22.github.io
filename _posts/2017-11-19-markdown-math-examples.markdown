@@ -9,6 +9,6 @@ I was curious to see what support there was for mathematical symbols on GitHub P
 
 $$ a^2 + b^2 = c^2 $$
 
-If there is nothing between the first paragraph and this line then rendering hasn’t work.
+If there is nothing between the first paragraph and this line then rendering hasn’t work (we should be able to see a^2 + b^2 = c^2)
 
 This post will evolve.
