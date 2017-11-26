@@ -10,10 +10,8 @@ math: false
 
 [In the previous post](http://thoughts.harbour22.uk/general/aws/development/cd-bitbucket-pipelines-and-ebs/) I looked at CI/CD using BitBucket and BitBucket Pipelines to deploy to AWS EBS.
 
-This time around I'll take a look at how the same can be achieved using GitHub and Travis CI.
-
-If you're following along please follow the pre-requisites from the prior article.
-
+This time around I'll take a look at how the same can be achieved using GitHub and Travis CI.  If you're following along please follow the pre-requisites from the prior article.
+<!--more-->
 ## Getting started
 
 This page on the [Travis CI site](https://travis-ci.com/getting_started) seemed like a good place to start.  I already had the [hello-world](https://github.com/harbour22/hello-world-svc) project on GitHut so seemed reasonable to take the site up on the offer to log in with GitHub credentials..
@@ -29,7 +27,7 @@ Travis CI and Pipelines use different configuration files to drive their respect
 ## Creating the .travis.yml file
 
 We're using the same python service created in the prior post so we need to use the slightly different syntax that Travis CI requires.  Again I'm looking to use python 3.4 and use the same requirements.txt we used last time.  I'll run the same set of tests as my check to ensure that the code is what I want to put forward to staging.
-```YAML
+{% highlight yaml %}
 language: python
 python:
   - "3.4"
@@ -38,10 +36,11 @@ install:
 # command to run tests
 script:
   - python -m unittest discover tests/
-```
+{% endhighlight %}
 
 Once we have a successful run of the tests we can use the built in support for AWS EBS and deployment
-```YAML
+
+{% highlight yaml %}
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
@@ -51,16 +50,16 @@ deploy:
   app: $APPLICATION_NAME
   env: $APPLICATION_ENV
   bucket_name: $AWS_S3_BUCKET
-```
+{% endhighlight %}
 
 I defined environment variables for each of the items above within the travis settings for this repo.  It does appear you can encrypt them locally and provide them to travis which I may look into in a future update.
 
 You'll notice here I've not separated out the difference between building on the master branch vs (in what we did last time) a staging branch.  This can easily be achieved by adding the
 
-```YAML
+{% highlight yaml %}
 on:
   branch: staging
-```
+{% endhighlight %}
 
 to the travis files.  I've held off setting this up as it's functionally identical to how this was achieved under BitBucket (except using GitHub!)
 

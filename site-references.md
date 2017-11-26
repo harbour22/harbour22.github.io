@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Site References
+permalink: /sitereferences/
 ---
 [Rouge is used for syntax highlighting](http://rouge.jneen.net)

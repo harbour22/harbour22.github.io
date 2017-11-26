@@ -37,38 +37,45 @@ Finally, docker is always entertaining so will throw that into the mix (and give
 Create a new repository on BitBucket.
 
 First of all set up your local venv.  The included gitignore file assumes this is within venv at the root of the project folder.
-```
-python3 -m venv venv
-```
+
+{% highlight console %}
+MacBook-Air:hello-world harbour22$ python3 -m venv venv
+{% endhighlight %}
+
 At this point you can source the activate script to setup the local virtual environment
-```
+
+{% highlight console %}
 MacBook-Air:hello-world harbour22$ source venv/bin/activate
 (venv) MacBook-Air:hello-world harbour22$
 (venv) MacBook-Air:hello-world harbour22$ which python
 ./venv/bin/python
-```
-We also need the AWS CLI and EB software
-```
-pip install awscli --upgrade --user
-pip install awsebcli --upgrade
+{% endhighlight %}
 
-```
+We also need the AWS CLI and EB software
+{% highlight console %}
+(venv) MacBook-Air:hello-world harbour22$ pip install awscli --upgrade --user
+(venv) MacBook-Air:hello-world harbour22$ pip install awsebcli --upgrade
+{% endhighlight %}
+
 finally install the required python dependencies
-```
+
+{% highlight console %}
 (venv) MacBook-Air:hello-world harbour22$ pip install -r requirements.txt
-```
+{% endhighlight %}
 
 Now, to start the application build the application.  Here we've given it a friendly name helloworld.
 
-```
+{% highlight console %}
 (venv) MacBook-Air:hello-world harbour22$ docker build -t helloworld .
 ## should see lots of output here
 (venv) MacBook-Air:hello-world harbour22$ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 helloworld          latest              b7fd88073164        22 seconds ago      111MB
-```
+{% endhighlight %}
+
 and finally run the application, mapping the external port 4000 to the internal container port 8080
-```
+
+{% highlight console %}
 (venv) MacBook-Air:hello-world harbour22$ docker run -p 4001:8080 helloworld
 ## from a different terminal window
 MacBook-Air:hello-world harbour22$ curl -X GET http://localhost:4001/helloworld | python -mjson.tool
@@ -79,7 +86,7 @@ MacBook-Air:hello-world harbour22$ curl -X GET http://localhost:4001/helloworld 
     "text": "hello, world"
 }
 
-```
+{% endhighlight %}
 
 ## Entitlements
 
@@ -105,7 +112,8 @@ Job done!
 
 I did have to go through an initial setup phase to get my EBS environment setup.  With the command-line tools installed (as part of the pre-requisites) this was fairly strightforward.
 
-```
+{% highlight console %}
+(venv) MacBook-Air:hello-world harbour22$ eb init
 (venv) MacBook-Air:hello-world harbour22$ eb create
 Enter Environment Name
 (default is hello-world-dev):
@@ -117,4 +125,4 @@ Select a load balancer type
 2) application
 3) network
 (default is 1): 1
-```
+{% endhighlight %}

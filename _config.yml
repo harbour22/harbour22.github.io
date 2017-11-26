@@ -16,7 +16,7 @@
 title: Harbour22
 email: narrator[at][domain]
 description: >- # this means to ignore newlines until "baseurl:"
-  Musings and notes in an ever evolving world
+  Thoughts and notes in an ever evolving world
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: harbour22uk
@@ -27,9 +27,8 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-#  - jekyll-paginate
 
-# paginate: 5
+highlighter: rouge
 
 excerpt_separator: <!--more-->
 permalink: /:categories/:title/
