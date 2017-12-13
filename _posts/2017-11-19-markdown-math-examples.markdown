@@ -4,8 +4,8 @@ title:  Markdown mathematical symbol rendering
 date:   2017-11-19
 categories: General Mathematics
 math: true
+comments: true
 ---
-
 
 I've started reading through a book on [Linear Algebra](https://books.google.co.uk/books/about/Linear_Algebra_Concepts_and_Methods.html) and as such I was interested to see what support there was for rendering mathematical symbols on GitHub Pages.  It seems that the syntax below is supported but the setup needed for this site was a little unclear from the documentation
 
@@ -13,7 +13,7 @@ I've started reading through a book on [Linear Algebra](https://books.google.co.
 $$ a^2 + b^2 = c^2 $$
 ```
 
-should render as 
+should render as
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -37,13 +37,11 @@ Finally we now need to actually create the ```mathjax.html``` file in the _inclu
 And if all goes well then the following matrix should render correctly!
 
 $$
-A_{m,n} = 
+A_{m,n} =
  \begin{pmatrix}
   a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
   a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
   \vdots  & \vdots  & \ddots & \vdots  \\
-  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n}
  \end{pmatrix}
 $$
-
-
