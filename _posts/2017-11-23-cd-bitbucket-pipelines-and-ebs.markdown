@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  Continuous Integration and Deploy (part 1 - Atlassian and AWS EBS)
 date:   2017-11-23
 categories: General AWS Development

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  Continuous Integration and Deploy (part 2 - GitHub, Travis and AWS EBS)
 date:   2017-11-26
 categories: General AWS Development

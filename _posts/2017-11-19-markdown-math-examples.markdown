@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  Markdown mathematical symbol rendering
 date:   2017-11-19
 categories: General Mathematics

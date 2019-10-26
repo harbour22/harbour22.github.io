@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Small beginnings"
 date:   2017-10-11
 categories: General
