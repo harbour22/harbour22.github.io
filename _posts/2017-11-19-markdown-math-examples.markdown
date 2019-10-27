@@ -25,9 +25,7 @@ These were the following changes that enabled the correct rendering on the minim
 On the posts.html in the _layout directory (this this didn’t exist prior then copy from the minima theme) we’ve added the following prior to the ```<article>``` tag.
 
 ```
-{% if page.math != false %}
- {% include mathjax.html %}
-{% endif %}
+
 ```
 
 Now that is in place then (as done on this post) you can include ```math: true``` in the Front Matter.
