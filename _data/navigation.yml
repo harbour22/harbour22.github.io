@@ -1,12 +1,21 @@
 # main links
 main:
-
   - title: "Posts"
     url: /posts/
+  - title: "Reference"
+    url: /docs/landing/      
   - title: "Categories"
     url: /categories/
-  - title: "Portfolios"
-    url: /portfolios/
+  - title: "Page collections"
+    url: /collections/
   - title: "About"
-    url: /about/    
+    url: /about/
   
+# documentation links
+docs:
+  - title: Reference
+    url: /docs/landing/   
+  - title: rPi
+    children:
+      - title: "rPi Citrix Setup"
+        url: /docs/citrix_on_rpi/          

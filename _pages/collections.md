@@ -1,10 +1,10 @@
 ---
 layout: archive
-title: "Portfolios"
-permalink: /portfolios/
+title: "Collections"
+permalink: /collections/
 author_profile: true
 ---
-A small selection of typically image based content
+Page collections 
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
