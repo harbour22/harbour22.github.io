@@ -35,9 +35,9 @@ analytics:
 author:
   name             : "Chris"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "Engineer (of the software kind)"
+  bio              : "Software Engineer"
   location         : "London, UK"
-  email            : thenarrator@harbour22.uk
+  #email            : thenarrator@harbour22.uk
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
