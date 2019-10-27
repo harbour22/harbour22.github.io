@@ -39,12 +39,12 @@ author:
   location         : "London, UK"
   #email            : thenarrator@harbour22.uk
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/harbour22uk"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/harbour22/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/harbour22uk"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/chrismathie"      
