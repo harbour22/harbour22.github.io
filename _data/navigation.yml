@@ -15,7 +15,9 @@ main:
 docs:
   - title: Reference
     url: /docs/landing/   
-  - title: rPi
+  - title: Computing
     children:
+      - title: "MacOS/Linux Cheatsheet"
+        url: /docs/macos_linux_cheatsheet.md   
       - title: "rPi Citrix Setup"
-        url: /docs/citrix_on_rpi/          
+        url: /docs/citrix_on_rpi/                
