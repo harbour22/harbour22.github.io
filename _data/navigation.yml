@@ -18,6 +18,6 @@ docs:
   - title: Computing
     children:
       - title: "MacOS/Linux Cheatsheet"
-        url: /docs/macos_linux_cheatsheet.md   
+        url: /docs/macos_linux_cheatsheet/
       - title: "rPi Citrix Setup"
         url: /docs/citrix_on_rpi/                
