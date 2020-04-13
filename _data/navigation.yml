@@ -19,5 +19,9 @@ docs:
     children:
       - title: "MacOS/Linux Cheatsheet"
         url: /docs/macos_linux_cheatsheet/
+      - title: "Python Cheatsheet"
+        url: /docs/python_cheatsheet/            
       - title: "rPi Citrix Setup"
-        url: /docs/citrix_on_rpi/                
+        url: /docs/citrix_on_rpi/
+      - title: "Video Encoding Cheatsheet"
+        url: /docs/encoding_cheatsheet/                
