@@ -16,7 +16,7 @@ The hvc1 tag is important for quicktime to recognise the hevc file.  In the exam
 More fun on the audio side can be had using map which will allow us to take the audio track, copy it as is along with adding a second encoded track.
 
 ```
-ffmpeg -i <input filename> -map 0:0 -map 0:1 -map 0:1 -c:v copy -tag:v hvc1 -c:a:0 copy -c:a:1 eac3 -b:a 224k -t 300 <output filename>.mp4
+ffmpeg -i <input filename> -map 0:0 -map 0:1 -map 0:1 -c:v copy -tag:v hvc1 -c:a:0 copy -c:a:1 eac3 -b:a 224k <output filename>.mp4
 ```
 
 If we want to encode it is possible but HDR makes a little bit of a mess of things.  The following seems to work (only for HDR input!) In the following example we're also rescaling the video to 1080 across (preserving the aspect ratio).  We also needed to download the latest build of ffmpeg as the brew installed version didn't support the zscale filters (hadn't been compiled with them)
