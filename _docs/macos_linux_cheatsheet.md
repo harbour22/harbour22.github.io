@@ -94,3 +94,17 @@ sudo systemctl start vscode-server.service
 # Check on the service
 systemctl status vscode-server.service
 ```
+
+## Starting a service on startup
+
+Follow instructions from [the tensorflow site](https://www.tensorflow.org/install/source).   We need to have the right version of bazel installed, which can be sourced from their release site.  Like other downloadable .sh files we'll need to manually clear the quarantine bit.
+
+```bash
+sudo xattr -c <path to bazel installation file>
+```
+
+When it comes to the bazel build we need to remind it about the capabilities of our host machine to avoid some of the runtime warnings and take advantage of any speedups we can.
+
+```bash
+bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-msse4.2 -k //tensorflow/tools/pip_package:build_pip_package
+```
