@@ -108,3 +108,14 @@ When it comes to the bazel build we need to remind it about the capabilities of 
 ```bash
 bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-msse4.2 -k //tensorflow/tools/pip_package:build_pip_package
 ```
+
+## zsh prompt changes
+```bash
+PROMPT='%F{033}%n@%m %B%F{008}%/%f%b %# '
+```
+
+## Find and remove files
+Older than 60 days
+```bash
+find . -type f -mtime +60
+```
